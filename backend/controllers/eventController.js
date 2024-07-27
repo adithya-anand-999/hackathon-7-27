@@ -1,30 +1,25 @@
 const axios = require('axios');
 
-async function searchEvents(req, res) {
-    const { location } = req.query;
-
-    if (!location) {
-        return res.status(400).json({ error: 'Location query parameter is required' });
-    }
-
+const getEventsByLocation = async (req, res) => {
     try {
-        const response = await axios.get('https://www.eventbriteapi.com/v3/events/search/', {
-            params: {
-                'location.address': location, // Use this parameter for location-based search
-                token: process.env.EVENTBRITE_API_KEY // Ensure the API key is correct
-            }
-        });
+        const { postalCode, latlong } = req.query;
 
+        if (!postalCode && !latlong) {
+            return res.status(400).json({ message: 'Please provide a postalCode or latlong.' });
+        }
+
+        const query = postalCode ? `postalCode=${postalCode}` : `latlong=${latlong}`;
+
+        // Replace YOUR_API_KEY with your actual API key.
+        const response = await axios.get(`https://api.example.com/discovery/v2/events?${query}&apikey=yh2RVAgMZZNrv5rF`);
+        
         res.json(response.data);
     } catch (error) {
-        console.error('Error fetching events:', error);
-        res.status(error.response?.status || 500).json({
-            error: error.response?.data?.error || 'Internal Server Error',
-            error_description: error.response?.data?.error_description || 'An error occurred while fetching events'
-        });
+        console.error('Error fetching events:', error.message);
+        res.status(500).json({ message: 'Internal Server Error' });
     }
-}
+};
 
 module.exports = {
-    searchEvents
+    getEventsByLocation,
 };
