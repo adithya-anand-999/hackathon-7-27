@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cfe3f4;
-    padding: 10px 20px;
-    border-bottom: 2px solid #8aa4c4; 
+    background-color: var(--light-blue);
+    padding: 10px 50px;
+    border-bottom: 2px solid var(--blue); 
 }
   
 .navbar-logo {
@@ -13,24 +13,24 @@
 }
   
 .logo-text {
-    color: black;
+    color: var(--black);
 }
   
 .highlight {
-    color: #ffea61; 
+    color: var(--light-yellow); 
 }
   
 .search-button {
-    background-color: #ffea61; 
+    background-color: var(--light-yellow); 
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    color: black;
+    color: var(--black);
 }
   
 .search-button:hover {
-    background-color: #ffd700; 
+    background-color: var(--yellow); 
 }
