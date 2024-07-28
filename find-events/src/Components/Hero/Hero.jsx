@@ -2,6 +2,14 @@ import React from 'react';
 import eventfinder from '../../assets/eventfinder.png';
 import './Hero.css';
 
+const eventTypes = [
+  { name: 'MUSIC', image: require('../../assets/music.jpg') },
+  { name: 'FESTIVITIES', image: require('../../assets/festivities.jpg') },
+  { name: 'FUNDRAISER', image: require('../../assets/fundraiser.jpg') },
+  { name: 'CONCERT', image: require('../../assets/concert.jpg') },
+  { name: 'NETWORKING', image: require('../../assets/social.jpg') }
+];
+
 const Hero = () => {
   return (
     <div className="hero-section">
@@ -15,20 +23,25 @@ const Hero = () => {
         </div>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search events..." />
-        <button type="button"><span role="img" aria-label="search">🔍</span></button>
-        <button type="button"><span role="img" aria-label="location">📍</span></button>
-        <button type="button"><span role="img" aria-label="add">➕</span></button>
-      </div>
-      <div className="types-of-events">
-        <h2>TYPES OF EVENTS</h2>
-        <div className="event-types">
-          <div className="event-type">MUSIC</div>
-          <div className="event-type">FESTIVITIES</div>
-          <div className="event-type">FUNDRAISER</div>
-          <div className="event-type">CONCERT</div>
-          <div className="event-type">NETWORKING</div>
+        <input type="text" placeholder="Search..." />
+        <div className="search-icons">
+          <span className="search-icon">🔍</span>
+          <span className="location-icon">📍</span>
+          <span className="add-icon">➕</span>
         </div>
+      </div>
+      <div className="event-types">
+      <h2>Types of Events</h2>
+      <div className="event-types-container">
+        {eventTypes.map((type, index) => (
+          <div className="event-type" key={index}>
+            <div className="image-placeholder">
+              <img src={type.image} alt={type.name} className="event-image" />
+            </div>
+            <p>{type.name}</p>
+          </div>
+        ))}
+      </div>
       </div>
     </div>
   );
