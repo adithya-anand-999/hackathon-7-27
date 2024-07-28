@@ -1,0 +1,38 @@
+/* src/Components/Page/EventFinderHeading.css */
+.event-finder-heading {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    max-width: 50%;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.header-text h1 span {
+    color: #fdd835;
+}
+
+.header-text p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.header-image img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+}
