@@ -1,6 +1,7 @@
 .page-container {
-    background-color: #cfe3f4; /* Light blue background */
-    border-radius: 20px; /* Rounded borders */
+    background-color: #cfe3f4;
+    border-top-left-radius: 20px;  
+    border-top-right-radius: 20px;
     padding: 20px;
   }
   
