@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Page from './Components/Page/Page'
@@ -8,13 +8,24 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Base from './Components/Main/Base';
 
 function App() {
+  const baseRef = useRef(null);
+
+  const scrollToBase = () => {
+    if (baseRef.current) {
+      baseRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
-      <Navbar/>
-      <Hero/>
-      <Page/>
-      <Footer/> 
+      <Navbar scrollToBase={scrollToBase} />
+      <Hero />
+      <Page />
+      <Sidebar />
+      <Base ref={baseRef} />
+      <Footer />
     </div>
+
   );
 }
 
