@@ -1,0 +1,7 @@
+/* src/pages/EventList.css */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

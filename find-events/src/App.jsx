@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Page from './Components/Page/Page'
+import EventList from './Components/Page/EventList'
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero'
 import Sidebar from './Components/Sidebar/Sidebar';
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Page/>
+      <EventList />
       <Footer/> 
     </div>
   );
