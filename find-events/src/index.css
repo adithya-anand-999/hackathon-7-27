@@ -4,10 +4,12 @@
   --yellow: #ffd700;
   --blue: #8aa4c4;
   --black: #000000;
+  --dark-gray: #666;
 }
 
 body {
   margin: 0;
+  color: var(--black);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

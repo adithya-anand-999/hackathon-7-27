@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-blue);
-    padding: 10px 50px;
-    border-bottom: 2px solid var(--blue); 
+    padding: 20px 50px;
+    /* border-bottom: 2px solid var(--blue);  */
 }
   
 .navbar-logo {
@@ -23,7 +23,7 @@
 .search-button {
     background-color: var(--light-yellow); 
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
