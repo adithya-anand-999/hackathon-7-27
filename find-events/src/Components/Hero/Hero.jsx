@@ -1,5 +1,5 @@
 import React from 'react';
-import eventfinder from '../../Assets/eventfinder.png';
+import eventfinder from '../../assets/eventfinder.png';
 import './Hero.css';
 
 const Hero = () => {

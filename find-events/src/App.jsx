@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Page from './Components/Page/Page'
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero'
+import Sidebar from './Components/Sidebar/Sidebar';
+import Base from './Components/Main/Base';
 
 function App() {
   return (
@@ -11,9 +13,10 @@ function App() {
       <Navbar/>
       {/* <Hero/> */}
       <Page/>
-      <Footer/>
+      <Footer/> 
     </div>
   );
 }
 
 export default App;
+//Need to add AI: Sidebar, Base after clicking the 'Use AI' button

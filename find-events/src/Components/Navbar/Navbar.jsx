@@ -7,9 +7,13 @@ const Navbar = () => {
       <div className="navbar-logo">
         <span className="logo-text">Event <span className="highlight">Finder</span></span>
       </div>
-      <button className="search-button">Search Events</button>
+      <div className="navbar-buttons">
+        <button className="search-button">Search Events</button>
+        <button className="ai-button">Use AI</button>
+      </div>
     </nav>
-  )
+  );
 }
+
 
 export default Navbar
