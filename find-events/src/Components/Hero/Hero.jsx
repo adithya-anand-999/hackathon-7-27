@@ -3,6 +3,15 @@ import eventfinder from '../../assets/eventfinder.png';
 import './Hero.css';
 
 const Hero = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleInputChange = (event) =>{
+      setSearchTerm(event.target.value);
+    }
+
+    const handleSearch = () => {
+      console.log(`Search for: ${searchTerm}`);
+    }  
   return (
     <div className="hero-section">
       <div className="hero">
@@ -15,8 +24,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="search-bar">
+        <input type="text"
+         placeholder="Search events..."
+         value={searchTerm}
+         onChange={handleInputChange} />
         <input type="text" placeholder="Search events..." />
-        <button type="button"><span role="img" aria-label="search">🔍</span></button>
+        <button type="button" onClick={handleSearch}><span role="img" aria-label="search">🔍</span></button>
         <button type="button"><span role="img" aria-label="location">📍</span></button>
         <button type="button"><span role="img" aria-label="add">➕</span></button>
       </div>
