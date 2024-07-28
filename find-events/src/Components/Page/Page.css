@@ -1,0 +1,9 @@
+.page-container {
+  padding: 20px;
+}
+
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
