@@ -23,16 +23,6 @@ const Hero = () => {
           <img src={eventfinder} alt="Event Finder" />
         </div>
       </div>
-      <div className="search-bar">
-        <input type="text" placeholder="Search..." />
-        <div className="search-icons">
-          <span className="search-icon">🔍</span>
-          <span className="location-icon">📍</span>
-          <span className="add-icon">➕</span>
-        </div>
-      </div>
-      <div className="event-types">
-      <h2>Types of Events</h2>
       <div className="event-types-container">
         {eventTypes.map((type, index) => (
           <div className="event-type" key={index}>
@@ -42,7 +32,6 @@ const Hero = () => {
             <p>{type.name}</p>
           </div>
         ))}
-      </div>
       </div>
     </div>
   );

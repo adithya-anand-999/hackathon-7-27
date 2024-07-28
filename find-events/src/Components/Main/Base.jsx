@@ -8,9 +8,6 @@ const Base = forwardRef((props, ref) => {
 
   return (
     <div className='main' ref={ref}>
-      <div className="nav">
-        <p>EventFinderAI</p>
-      </div>
       <div className="main-container">
         {!showResult ? (
           <>

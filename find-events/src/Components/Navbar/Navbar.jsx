@@ -8,7 +8,6 @@ const Navbar = ({ scrollToBase }) => {
         <span className="logo-text">Event <span className="highlight">Finder</span></span>
       </div>
       <div className="navbar-buttons">
-        <button className="search-button">Search Events</button>
         <button className="ai-button" onClick={scrollToBase}>Use AI</button>
       </div>
     </nav>

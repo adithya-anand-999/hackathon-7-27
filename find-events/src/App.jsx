@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import Page from './Components/Page/Page'
+import Events from './Components/Events/Events'
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero'
-import Sidebar from './Components/Sidebar/Sidebar';
 import Base from './Components/Main/Base';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
     <div className="App">
       <Navbar scrollToBase={scrollToBase} />
       <Hero />
-      <Page />
+      <Events />
       <Base ref={baseRef} />
       <Footer />
     </div>
@@ -29,4 +28,3 @@ function App() {
 }
 
 export default App;
-//Need to add AI: Sidebar, Base after clicking the 'Use AI' button
