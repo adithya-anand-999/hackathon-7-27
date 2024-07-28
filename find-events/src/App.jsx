@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <Hero/> */}
+      <Hero/>
       <Page/>
       <Footer/> 
     </div>
