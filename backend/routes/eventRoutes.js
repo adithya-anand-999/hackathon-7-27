@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { getEventsByLocation } = require('../controllers/eventController');
+const { getEventsByGeoPoint } = require('../controllers/eventController');
 
-router.get('/events', getEventsByLocation);
+router.get('/events/geopoint', getEventsByGeoPoint);
 
 module.exports = router;
