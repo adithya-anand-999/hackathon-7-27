@@ -35,11 +35,13 @@
     /* text-align: left; */
     line-height: 25px;
     text-align: left;
+    margin-bottom: 30px;
 }
   
 .image-section {
     flex: 1;
-    text-align: center;
+    align-items: center;
+    
 }
   
 .image-section img {

@@ -3,11 +3,11 @@ import eventfinder from '../../assets/eventfinder.png';
 import './Hero.css';
 
 const eventTypes = [
-  { name: 'MUSIC', image: require('../../assets/music.jpg') },
-  { name: 'FESTIVITIES', image: require('../../assets/festivities.jpg') },
-  { name: 'FUNDRAISER', image: require('../../assets/fundraiser.jpg') },
-  { name: 'CONCERT', image: require('../../assets/concert.jpg') },
-  { name: 'NETWORKING', image: require('../../assets/social.jpg') }
+  { name: 'MUSIC', image: require('../../assets/music.png') },
+  { name: 'FESTIVITIES', image: require('../../assets/festivities.png') },
+  { name: 'FUNDRAISER', image: require('../../assets/fundraiser.png') },
+  { name: 'CONCERT', image: require('../../assets/concert.png') },
+  { name: 'NETWORKING', image: require('../../assets/social.png') }
 ];
 
 const Hero = () => {
