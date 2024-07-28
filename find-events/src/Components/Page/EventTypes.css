@@ -1,4 +1,3 @@
-/* src/Components/Page/EventTypes.css */
 .event-types {
     text-align: center;
     margin: 40px 0;
@@ -21,8 +20,18 @@
   .image-placeholder {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image fits within the circle */
     background-color: #dcdcdc;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area properly */
   }
   
