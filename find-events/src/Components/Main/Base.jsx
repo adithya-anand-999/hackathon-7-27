@@ -10,7 +10,6 @@ const Base = forwardRef((props, ref) => {
     <div className='main' ref={ref}>
       <div className="nav">
         <p>EventFinderAI</p>
-        <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
         {!showResult ? (
@@ -67,9 +66,6 @@ const Base = forwardRef((props, ref) => {
               {input ? <img onClick={()=>onSent()} src={assets.send_icon} alt="" /> : null}
             </div>
           </div>
-          <p className="bottom-info">
-            Gemini can make mistakes. Consider checking important information.
-          </p>
         </div>
       </div>
     </div>

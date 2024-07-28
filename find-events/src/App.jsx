@@ -21,7 +21,6 @@ function App() {
       <Navbar scrollToBase={scrollToBase} />
       <Hero />
       <Page />
-      <Sidebar />
       <Base ref={baseRef} />
       <Footer />
     </div>

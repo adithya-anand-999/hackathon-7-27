@@ -1,12 +1,9 @@
 .page-container {
-    background-color: #cfe3f4;
-    border-top-left-radius: 20px;  
-    border-top-right-radius: 20px;
-    padding: 20px;
-  }
-  
+  padding: 20px;
+}
+
 .events-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

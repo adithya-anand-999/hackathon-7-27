@@ -1,17 +1,12 @@
 import React from 'react';
-import eventsData from './eventsData';
-import EventCard from './EventCard';
+import EventList from './EventList';
 import './Page.css';
 
 const Page = () => {
   return (
     <div className="page-container">
-      <h2>Events near: </h2>
-      <div className="events-grid">
-        {eventsData.map(event => (
-          <EventCard key={event.id} event={event} />
-        ))}
-      </div>
+      <h2>Events</h2>
+      <EventList location="San Francisco" />
     </div>
   );
 };
